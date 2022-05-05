@@ -1,0 +1,44 @@
+
+
+.form-atualiza{
+    background-color:#162728;
+    color: #fff;
+    height: 800px;
+    padding-top: 50px;
+    padding-left: 20px;
+    
+}
+
+.form-atualiza h2{
+    margin-bottom: 10px;
+}
+
+.form-atualiza .form-input{
+    width: 250px;
+    height: 100px;
+    
+}
+ .form-atualiza .input-d{
+    background-color: #162728;
+}
+
+.form-atualiza button{
+    margin-top: 130px;
+    position: relative;
+    font-size: 18px;
+    background-color: #D1BF74;
+    border: none;
+    width: 100px;
+    height: 35px;
+    bottom:7px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.form-atualiza button:hover{
+    background-color:black;
+    
+}

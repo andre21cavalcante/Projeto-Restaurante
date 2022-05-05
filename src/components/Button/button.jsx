@@ -1,11 +1,15 @@
-import React from "react";
-import "../../App.css";
-const Button = ({ nome, funcao}) => {
+import React from 'react'
+//import styled from 'styled-components';
+
+
+const Button = ({click,nome}) => {
   return (
     <div>
-      <button onClick={funcao}>{nome}</button>
-    </div>
-  );
-};
 
-export default Button;
+        <button onClick={click}>{nome}</button>
+
+    </div>
+  )
+}
+
+export default Button
