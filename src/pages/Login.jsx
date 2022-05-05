@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import "../App.css";
 import Button from "../components/Button/button";
 import Input from "../components/Input/Input";
 import Logo from "../assets/logo.jpg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 const Foto = styled.main`
   .pag {
@@ -80,7 +83,7 @@ const Form = styled.form`
   input {
     margin-bottom: 10px;
     background-color: black;
-    border: none;
+    border-style: none;
     border-radius: 2px;
     height: 30px;
     width: 260px;
@@ -88,10 +91,10 @@ const Form = styled.form`
     padding-left: 10px;
   }
 
-  input{
-    input:active
-      border: none
-     
+  input:focus {
+    // box-shadow: 0 0 0 0;
+    // outline: 0;
+    border-color: #d5c06b;
   }
 `;
 
@@ -105,15 +108,33 @@ const Footer = styled.footer`
 `;
 
 const Login = () => {
+  const notify = () => toast("Cliente cadastrado com sucesso!");
+    const [valor, setValor] = useState({});
+  
+    function handleName(e) {
+      setValor({...valor, [e.target.name]:e.target.value});
+      console.log(valor)
+    }
+
+    const api =()=>{
+      axios.post("https://hidden-brushlands-01887.herokuapp.com/clientes", valor)
+  };
+
+  function submit(e){
+  e.preventDefault()
+  api();
+  notify() 
+  }
+
   return (
     <>
       <Foto>
         <div className="pag">
-          <Form>
+          <Form onSubmit={submit}>
             <img src={Logo} alt="" />
             <h2>
               Seja Bem-vindo <br />
-              ao Shark-Bistro
+              ao SB
               <br />
             </h2>
             <h3>Preencha os campos abaixo e cadastre-se</h3>
@@ -121,14 +142,12 @@ const Login = () => {
               Preencha os campos para receber as informações sobre programação e
               disponibilidade.
             </h4>
-            <Input nome="nome " placeholder="Nome completo" />
-            <Input nome="E-mail " placeholder="Endereço de e-mail" />
-            <Input nome="Telefone " placeholder="+55 (xx) xxxxx-xxxx" />
+            <Input nome="nome " placeholder="Nome completo" onChange = {handleName} name="nome" />
+            <Input nome="E-mail " placeholder="Endereço de e-mail" onChange = {handleName} name="email" />
+            <Input nome="Telefone " placeholder="xxxx-xxxx" onChange = {handleName} name="telefone" />
             <Button nome="Login" />
-            <Button
-              nome="Cadastrar"
-              funcao={() => alert("E-mail cadastrado com sucesso!")}
-            />
+            <Button nome="Cadastrar"  />
+            <ToastContainer autoClose={5000} position="top-center" />
           </Form>
         </div>
       </Foto>
