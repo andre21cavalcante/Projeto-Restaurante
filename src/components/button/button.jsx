@@ -1,7 +1,7 @@
-function Button(){
+function Button({nome,click}){
     return(
-        <button type="submit">
-            Comprar
+        <button onClick={click}>
+            {nome}
         </button>
     )
 

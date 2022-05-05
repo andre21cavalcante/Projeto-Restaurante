@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams} from "react-router-dom";
 import api from "../../services/api";
-import Input from "../Input/Input";
-import Button from "../Button/button";
+import Input from "../Input/input";
+import Button from "../button/button";
 //import styled from "styled-components";
 import './updateA.css'
 

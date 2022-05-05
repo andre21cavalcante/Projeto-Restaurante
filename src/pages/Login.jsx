@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import "../App.css";
-import Button from "../components/Button/button";
-import Input from "../components/Input/Input";
+import Button from "../components/button/button";
+import Input from "../components/Input/input";
 import Logo from "../assets/logo.jpg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

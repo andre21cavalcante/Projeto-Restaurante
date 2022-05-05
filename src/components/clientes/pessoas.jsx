@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button/button';
+import Button from '../button/button';
 import { useNavigate } from "react-router-dom";
 import {Link } from "react-router-dom";
 import api from '../../services/api';
