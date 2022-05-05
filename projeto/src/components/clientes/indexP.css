@@ -1,0 +1,65 @@
+
+ .pai{
+  width:450px;
+  height:fit-content;
+  border:1px solid black;
+  border-radius:10px;
+  margin:1em;
+  padding:1em; 
+  background-color: #D1BF74;
+ }
+
+ .pai .nav ul{
+     display: flex;
+    
+ }
+
+ .pai .nav ul li{
+     list-style: none;
+     padding-right: 8px;
+ }
+
+
+.pai div p{
+ padding-bottom: 3px;
+ color: black;
+ font-weight: 500;
+  }
+
+.pai div .link{
+ color:black;
+ text-decoration: none;
+ border: 1px solid black;
+ padding: 10px;
+ background-color: #fff;
+ font-size: 15px;
+ transition: all 1s;
+
+}
+
+.pai button{
+    font-size: 18px;
+    background-color: #fff;
+    border: none;
+    width: 100px;
+    height: 35px;
+    position: relative;
+    bottom:7px;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.pai button:hover{
+    background-color: black;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.pai div .link:hover{
+    background-color: black;
+    color: #fff;
+    transform: scale(1.1);
+}

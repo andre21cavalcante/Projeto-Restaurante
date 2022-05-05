@@ -1,4 +1,5 @@
 import React from 'react'
+import{Link} from 'react-router-dom'
 import '../../App.css';
 import styled from 'styled-components'
 import logo from '../../assets/logo-header.svg'
@@ -11,7 +12,6 @@ const Head = styled.header`
  padding: 2px 22px;
  font-size: 1.2rem;
  flex-wrap:wrap;
- height: 100px;
  background-color: #162728;
  height: 120px;
  
@@ -61,9 +61,10 @@ function Header(){
        <a href="/"><img src={logo} alt="logo" /></a> 
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><Link to ='/'>Home</Link></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#cardápio">Cardápio</a></li>
+            <li><Link to="/clientes">Clientes</Link></li>
           </ul>
         </nav>
       </Head>
