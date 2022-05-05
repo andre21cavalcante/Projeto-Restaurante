@@ -85,4 +85,4 @@ function Cardapio(){
     )
 }
 
-export default Cardapio
+export default Cardapio;
