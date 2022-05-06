@@ -7,6 +7,7 @@ import Logo from "../assets/logo.jpg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Foto = styled.main`
   .pag {
@@ -110,7 +111,7 @@ const Footer = styled.footer`
 const Login = () => {
   const notify = () => toast("Cliente cadastrado com sucesso!");
     const [valor, setValor] = useState({});
-  
+    const navigate = useNavigate()
     function handleName(e) {
       setValor({...valor, [e.target.name]:e.target.value});
       console.log(valor)
@@ -124,6 +125,7 @@ const Login = () => {
   e.preventDefault()
   api();
   notify() 
+  navigate("/home")
   }
 
   return (

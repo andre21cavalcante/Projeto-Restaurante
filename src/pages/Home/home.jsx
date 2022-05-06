@@ -8,8 +8,8 @@ import logo from '../../assets/logo-header.svg'
 import logo2 from '../../assets/Icone-footer-shark.svg'
 import face from '../../assets/icon-facebook.svg'
 import insta from '../../assets/icon-insta.svg'
-import Header from '../../components/Header/header'
-import Footer from '../../components/Footer/footer'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 
 
 const  Secao = styled.section`
@@ -329,7 +329,7 @@ function Home(){
 
 <div>
 <h1>Confira nosso cardápio</h1>
-      <a href="/">cardápio</a>
+      <a href="/cardapio">cardápio</a>
 </div>
 
 </section>
