@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import data from "../cardapio/data.js"
+import data from "./data.js"
 import Main from "../../components/Main_cart/Main.js"
 import Basket from "../../components/Basket_cart/Basket.js"
-import "../cardapio/cardapio.css"
+import "../carrinho/carrinho.css"
 
-function Cardapio() {
+function Carrinho() {
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
 
@@ -49,4 +49,4 @@ function Cardapio() {
   );
 }
 
-export default Cardapio;
+export default Carrinho;
