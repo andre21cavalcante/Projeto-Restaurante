@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Header from '../../components/Header/header'
+import Header from '../../components/header/header'
 import introducao from '../../assets/introdução-sobre.svg'
 import comida from '../../assets/imagem-sobre.svg'
 import missao from '../../assets/imagem-missão.svg'

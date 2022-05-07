@@ -14,7 +14,7 @@ import Espaguete from "../../img/espaguete.jpeg"
 import Panqueca from "../../img/pancake.jpeg"
 import Donuts from "../../img/Donuts.jpeg"
 import Button from "../../components/Button/button.jsx"
-import Header from '../../components/Header/header'
+import Header from '../../components/header/header'
 import Footer from '../../components/Footer/footer'
 
 
