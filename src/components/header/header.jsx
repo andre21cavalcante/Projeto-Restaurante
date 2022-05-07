@@ -4,6 +4,7 @@ import '../../App.css';
 import styled from 'styled-components'
 import logo from '../../assets/logo-header.svg'
 
+
 const Head = styled.header`
  display: flex;
  justify-content: space-between;
@@ -49,6 +50,8 @@ nav ul li a:hover {
   color:#d5c06b;
 
 }
+
+
 `
 
 function Header(){
@@ -58,9 +61,9 @@ function Header(){
        <a href="/"><img src={logo} alt="logo" /></a> 
         <nav>
           <ul>
-            <li><Link to ='/home'>Home</Link></li>
-            <li><a href="#sobre">Contato</a></li>
-            <li><Link to="/cardapio">Cardápio</Link></li>
+            <li><Link to ='/'>Home</Link></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cardápio">Cardápio</a></li>
             <li><Link to="/clientes">Clientes</Link></li>
           </ul>
         </nav>
