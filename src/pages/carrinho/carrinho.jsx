@@ -3,7 +3,6 @@ import { useState } from "react";
 import data from "./data.js"
 import Main from "../../components/Main_cart/Main.js"
 import Basket from "../../components/Basket_cart/Basket.js"
-import "../carrinho/carrinho.css"
 import styles from "styled-components"
 
 const Posicao = styles.div`

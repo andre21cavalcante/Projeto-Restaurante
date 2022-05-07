@@ -2,6 +2,11 @@
 
 
 body {
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Poppins";
   background: linear-gradient(to right, #162728, #1e3638);
 }
