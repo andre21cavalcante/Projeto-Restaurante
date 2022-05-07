@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import api from '../../services/api.js'
 import styled from 'styled-components';
-import Header from '../../components/header/header'
-import Footer from '../../components/footer/footer'
+import Header from '../../components/Header/header'
+import Footer from '../../components/Footer/footer'
 import Pessoas from '../../components/clientes/pessoas.jsx';
 import "../../App.css"
 

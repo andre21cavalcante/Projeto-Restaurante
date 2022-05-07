@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams} from "react-router-dom";
 import api from "../../services/api";
 import Input from "../Input/input";
-import Button from "../button/button";
+import Button from "../Button/button";
 //import styled from "styled-components";
 import './updateA.css'
 

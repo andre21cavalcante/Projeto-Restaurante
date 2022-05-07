@@ -6,6 +6,7 @@ import Cardapio from './pages/cardapio/cardapio.jsx';
 import Cliente from './pages/Clientes/cliente';
 import Visualizar from './pages/Visualizar.jsx/visualizar';
 import Atualizar from './components/Update/atualizar';
+import Sobre from './pages/Sobre/Sobre'
 //import Teste from './pages/Home/teste';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route path='/clientes' element={<Cliente/>}/>
           <Route path='/visualizar/:id' element={<Visualizar/>}/>
           <Route path='/atualizar/:id' element={<Atualizar/>}/>
-
+          <Route path='/sobre' element={<Sobre/>}/>
           <Route/>
           <Route/>
         </Routes>
@@ -29,8 +30,6 @@ function App() {
 
 
       </Router>
-  {/* <Home/> */}
-
  
 
     </div>

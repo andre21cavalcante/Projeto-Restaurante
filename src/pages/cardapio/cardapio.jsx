@@ -13,11 +13,16 @@ import Camarao from "../../img/camarao.jpeg"
 import Espaguete from "../../img/espaguete.jpeg"
 import Panqueca from "../../img/pancake.jpeg"
 import Donuts from "../../img/Donuts.jpeg"
-import Button from "../../components/button/button.jsx"
+import Button from "../../components/Button/button.jsx"
+import Header from '../../components/Header/header'
+import Footer from '../../components/Footer/footer'
+
+
 function Cardapio(){
     return(
 
     <div>
+        <Header/>
         <h1 className={styles.Titulo} >Cardápio</h1>
         <Container>
             <div>  
@@ -81,6 +86,7 @@ function Cardapio(){
                 <p className={styles.NomeComida}>Preço:R$ 5,00 <Button nome="comprar"/></p>
             </div>
         </Container>
+        <Footer/>
     </div>
     )
 }
