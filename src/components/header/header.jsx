@@ -62,8 +62,8 @@ function Header(){
         <nav>
           <ul>
             <li><Link to ='/'>Home</Link></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#cardápio">Cardápio</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/cardápio">Cardápio</a></li>
             <li><Link to="/clientes">Clientes</Link></li>
           </ul>
         </nav>
