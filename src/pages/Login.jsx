@@ -93,8 +93,6 @@ const Form = styled.form`
   }
 
   input:focus {
-    // box-shadow: 0 0 0 0;
-    // outline: 0;
     border-color: #d5c06b;
   }
 `;
@@ -112,9 +110,9 @@ const Login = () => {
   const notify = () => toast("Cliente cadastrado com sucesso!");
     const [valor, setValor] = useState({});
     const navigate = useNavigate()
+  
     function handleName(e) {
       setValor({...valor, [e.target.name]:e.target.value});
-      console.log(valor)
     }
 
     const api =()=>{

@@ -97,55 +97,6 @@ const Chef = styled.section`
     font-size: 4em;
     font-weight: 300;
  }
-
- .descricao{
-    top: initial;
-    bottom: 80px;
-    right: 50%;
-    width: 320px;
-    margin-right: -590px;
-    position: absolute;
- }
-
-
- .descricao p{
-    background:#000000;
-    padding:30px;
-    color: #ffffff;
-    font-size: 0.9em;
-    line-height: 24px;
-    font-weight: 300;
- }
-
- .descricao a{
-    margin: auto;
-    width: 80%;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    display: block;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 3px solid #ffffff;
-    -webkit-transition: border ease 0.3s;
-    transition: border ease 0.3s;
-    outline: none;
-    cursor: pointer;
-    font-weight: 400;
-    background: gray;
-    margin-top: 7px;
-}
- }
-
-
- .descricao a:hover{
-    color: #d5c06b;
-    font-weight: 700;
- }
-
- .descricao p:hover{
-    color: #d5c06b;
- }
 `
 
 
@@ -188,15 +139,13 @@ section div h1{
  }
 
  section div h1:hover{
-   //color: #D1BF74;
-   //border: 3px solid #D1BF74;
    box-shadow: 1px 1px 4px 6px #D1BF74;
 
  }
 
  section div a{
-    width: 169px;
-    height: 55px;
+    width: 140px;
+    height: 35px;
     background: #162728;
     border: 1px solid #000000;
     color:#fff;
@@ -209,7 +158,7 @@ section div h1{
     text-decoration: none;
     padding:14px;
     border-radius: 8px;
-   margin-top:15px;
+    margin-top:-50px;
  }
 
  section div a:hover{
@@ -293,12 +242,6 @@ function Home(){
             <b>PIERRE</b>
             </h3>
         </div>
-
-        <div className='descricao'>
-            <p>O Chef Jean Pierre viajou por diversos países e criou o SB Restaurante para você. Tudo isso para realizar um sonho: abrir o melhor restaurante do mundo.</p>
-
-            <a href="/">Conheça nossa história</a>
-        </div>
        
     </Chef>
 </div>
@@ -360,8 +303,8 @@ function Home(){
             <span>Reservas:</span><br />
             <span>+55 (21) 99422-1586</span>
             </div>
-            <a href="/"><img src={face} alt="icon-facebook" className='facebook' /></a>
-            <a href="/"> <img src={insta} alt="icon-instagram" className='instagram' /></a>
+                <img src={face} alt="icon-facebook" className='facebook' />
+                <img src={insta} alt="icon-instagram" className='instagram' />
         </div>
 
           

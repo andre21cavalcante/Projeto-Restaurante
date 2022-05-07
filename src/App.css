@@ -1,24 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@700&display=swap");
 
 
 body {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Poppins";
   background: linear-gradient(to right, #162728, #1e3638);
 }
- #home{
- background-color: #162728;
- font-family: 'Poppins', sans-serif;
-} 
 
 nav li a{
   animation: mover 880ms;
@@ -59,6 +45,6 @@ nav li a{
     opacity: 1;
     transform: translatey(0%);
   }
-}
+} 
 
 

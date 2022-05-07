@@ -16,7 +16,7 @@ import "./indexV.css"
       })
       .catch((erro) => console.log(erro));
   },[id]);
-  //console.log(contato);
+  
   return (
 
       <div className="container"> 

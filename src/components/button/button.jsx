@@ -1,6 +1,4 @@
 import React from 'react'
-//import styled from 'styled-components';
-
 
 const Button = ({click,nome}) => {
   return (
@@ -12,4 +10,4 @@ const Button = ({click,nome}) => {
   )
 }
 
-export default Button
+export default Button;

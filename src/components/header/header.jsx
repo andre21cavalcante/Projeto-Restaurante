@@ -61,9 +61,9 @@ function Header(){
        <a href="/"><img src={logo} alt="logo" /></a> 
         <nav>
           <ul>
-            <li><Link to ='/'>Home</Link></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#cardápio">Cardápio</a></li>
+            <li><Link to ='/home'>Home</Link></li>
+            <li><a href="#sobre">Contato</a></li>
+            <li><Link to="/cardapio">Cardápio</Link></li>
             <li><Link to="/clientes">Clientes</Link></li>
           </ul>
         </nav>

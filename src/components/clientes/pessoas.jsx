@@ -3,9 +3,8 @@ import Button from '../button/button';
 import { useNavigate } from "react-router-dom";
 import {Link } from "react-router-dom";
 import api from '../../services/api';
-//import styled from 'styled-components';
-//import styles from "./Pessoas.module.css"
 import "./indexP.css"
+
 const Pessoas = ({id,nome,email,telefone}) => {
   const navigate = useNavigate();
 

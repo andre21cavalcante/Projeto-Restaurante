@@ -16,4 +16,3 @@ export const Container = styled.div`
   grid-template-columns: auto auto auto;
   padding: 165px;
 `;
-
