@@ -1,0 +1,55 @@
+ @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@700&display=swap");
+
+
+body {
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  background: linear-gradient(to right, #162728, #1e3638);
+}
+
+nav li a{
+  animation: mover 880ms;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+  overflow: hidden;
+  
+}
+
+
+.descricao{
+  animation: move 880ms;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+  overflow: hidden;
+
+}
+
+
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateX(-15%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes mover {
+  from {
+    opacity: 0;
+    transform: translatey(-15%);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0%);
+  }
+} 
+
+
