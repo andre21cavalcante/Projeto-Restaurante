@@ -4,7 +4,6 @@ import '../../App.css';
 import styled from 'styled-components'
 import logo from '../../assets/logo-header.svg'
 
-
 const Head = styled.header`
  display: flex;
  justify-content: space-between;
@@ -50,8 +49,6 @@ nav ul li a:hover {
   color:#d5c06b;
 
 }
-
-
 `
 
 function Header(){
